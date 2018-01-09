@@ -1,2 +1,5 @@
 # Generator.php
-Doctrine 2 Generator
+Doctrine2 Generate Entities form Existing Database 
+
+Run
+# php generator.php
