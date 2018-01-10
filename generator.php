@@ -16,11 +16,11 @@ $config->setProxyNamespace('Proxies');
 
 $connectionParams = array(
     'driver' => 'pdo_mysql',
-    'host' => 'localhost',
+    'host' => 'mysql',
     'port' => '3306',
-    'user' => 'root',
-    'password' => 'root',
-    'dbname' => 'dbname',
+    'user' => 'user.name',
+    'password' => 'user.password',
+    'dbname' => 'database.name',
     'charset' => 'utf8',
 );
 
@@ -34,7 +34,6 @@ $em->getConnection()->getDatabasePlatform()->registerDoctrineTypeMapping('enum',
 $driver = new \Doctrine\ORM\Mapping\Driver\DatabaseDriver(
                 $em->getConnection()->getSchemaManager()
 );
-$driver->setNamespace('App\Model\Entity');
 $em->getConfiguration()->setMetadataDriverImpl($driver);
 $cmf = new \Doctrine\ORM\Tools\DisconnectedClassMetadataFactory($em);
 $cmf->setEntityManager($em);
