@@ -45,4 +45,4 @@ $generator->setUpdateEntityIfExists(true);
 $generator->setGenerateStubMethods(true);
 $generator->setGenerateAnnotations(true);
 $generator->generate($metadata, __DIR__ . '/Entities');
-print 'Done!';
+print 'Done!' . PHP_EOL;
