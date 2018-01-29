@@ -5,6 +5,9 @@ Create a folder GENERATOR.
 
 Run the generator.php into a folder.
 
-Ex: Folder "models" in our root of project.
-  
 # php generator.php
+
+Ex: Copy the entities and repositories to folder "models" in our root of project or "app".
+
+  
+
